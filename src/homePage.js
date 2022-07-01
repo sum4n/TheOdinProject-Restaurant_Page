@@ -2,6 +2,7 @@ import innImage from './GoldshireInn.webp';
 
 export default function firstPage() {
     const homePageDiv = document.createElement('div');
+    homePageDiv.setAttribute('id', 'homePage');
 
     const h1 = document.createElement('h1');
     h1.textContent = "Lion's Pride Inn";
