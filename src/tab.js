@@ -1,6 +1,7 @@
 export default function tab() {
 
     const tabDiv = document.createElement('div')
+    tabDiv.setAttribute('id', 'tabNav');
 
     const home = document.createElement('p');
     home.setAttribute('id', 'homeTab');

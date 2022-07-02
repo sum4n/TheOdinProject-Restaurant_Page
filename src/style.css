@@ -8,6 +8,15 @@ body {
     height: vh; */
 }
 
+#tabNav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#homeTab:hover, #menuTab:hover, #contactTab:hover {
+    cursor: pointer;
+}
+
 #homePage {
     color: white;
     /* background: url('./GoldshireInn.webp') no-repeat center fixed;
