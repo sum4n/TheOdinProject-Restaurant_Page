@@ -1,5 +1,6 @@
 body {
-    color: red;
+    color: white;
+    font-weight: bold;
     background: url('./GoldSInn.jpg') no-repeat center fixed;
     background-size: cover;
     /* background-repeat: no-repeat; */
@@ -7,11 +8,18 @@ body {
     height: vh; */
 }
 
-/* #homePage {
-    color: yellow;
-    background: url('./GoldshireInn.webp') no-repeat center fixed;
-    background-size: cover;
+#homePage {
+    color: white;
+    /* background: url('./GoldshireInn.webp') no-repeat center fixed;
+    background-size: cover; */
 
     margin: auto;
-    width: 95%;
-} */
+    width: 85%;
+    /* height: 500px; */
+}
+
+#homePage>h1, #homePage>p {
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 2rem;
+}
