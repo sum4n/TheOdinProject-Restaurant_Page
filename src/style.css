@@ -1,0 +1,17 @@
+body {
+    color: red;
+    background: url('./GoldSInn.jpg') no-repeat center fixed;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* width: vw;
+    height: vh; */
+}
+
+/* #homePage {
+    color: yellow;
+    background: url('./GoldshireInn.webp') no-repeat center fixed;
+    background-size: cover;
+
+    margin: auto;
+    width: 95%;
+} */

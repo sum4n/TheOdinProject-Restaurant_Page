@@ -1,9 +1,22 @@
+import './style.css';
+// import goldShireInn from './GoldSInn.jpg';
+
 import tab from "./tab";
 import homePage from './homePage';
 import menuPage from './menuPage';
 import contactPage from "./contactPage";
 
 const content = document.getElementById("content");
+
+// Looks like we dont need anything below to set a background image.
+// Css is sufficient for this.
+// const backgroundImg = new Image();
+// backgroundImg.src = goldShireInn;
+// document.appendChild(backgroundImg);
+// const bgImg = document.createElement('img');
+// bgImg.src = goldShireInn;
+// let body = document.querySelector('body');
+// // body.appendChild(bgImg);
 
 content.appendChild(tab());
 content.appendChild(homePage());
