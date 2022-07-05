@@ -1,6 +1,7 @@
 body {
     color: white;
     font-weight: bold;
+    text-shadow: 2px 2px black;
     /* background: url('./GoldshireInn.webp') no-repeat center fixed; */
     /* background-size can be enforced with !important */
     /* background-size: cover !important; */

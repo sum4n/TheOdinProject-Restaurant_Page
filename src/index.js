@@ -14,11 +14,13 @@ const content = document.getElementById("content");
 content.appendChild(tab());
 content.appendChild(homePage());
 setBackground(GoldShireInn);
+// set homeTab marker on page load as it loads first automatically
+document.getElementById('homeTab').classList.add('underline');
 
 
 function removeDiv() {
-    const child = content.lastElementChild;
-    content.removeChild(child);
+    const lastChild = content.lastElementChild;
+    content.removeChild(lastChild);
 }
 
 function setBackground(imgUrl) {
