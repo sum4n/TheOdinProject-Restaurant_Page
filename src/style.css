@@ -17,6 +17,10 @@ body {
     cursor: pointer;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 #homePage {
     margin: auto;
     width: 85%;

@@ -27,23 +27,34 @@ function setBackground(imgUrl) {
     document.body.style.backgroundSize = 'cover';
 }
 
+function markCurrentNav(navID) {
+    let underline = document.querySelector('.underline');
+    if (underline) {
+        underline.classList.remove('underline');
+    }
+    navID.classList.add('underline');
+}
+
 const home = document.getElementById('homeTab');
 home.addEventListener('click', () => {
     removeDiv(),
     content.appendChild(homePage()),
-    setBackground(GoldShireInn)
+    setBackground(GoldShireInn),
+    markCurrentNav(home)
 });
 
 const menu = document.getElementById('menuTab');
 menu.addEventListener('click', () => {
     removeDiv(),
     content.appendChild(menuPage()),
-    setBackground(FoodImg)
+    setBackground(FoodImg),
+    markCurrentNav(menu)
 });
 
 const contact = document.getElementById('contactTab');
 contact.addEventListener('click', () => {
     removeDiv(),
     content.appendChild(contactPage()),
-    setBackground(ContactImg)
+    setBackground(ContactImg),
+    markCurrentNav(contact)
 });
