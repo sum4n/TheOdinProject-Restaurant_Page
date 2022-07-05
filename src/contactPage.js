@@ -1,13 +1,11 @@
-import innPic from './inn.jpg';
-
 export default function() {
     const contactDiv = document.createElement('div');
     contactDiv.setAttribute('id', 'contactPage');
 
-    const img = document.createElement('img');
-    img.src = innPic;
+    const contactHeading = document.createElement('h1');
+    contactHeading.textContent = "Contact Information";
 
-    contactDiv.appendChild(img);
+    contactDiv.appendChild(contactHeading);
 
     return contactDiv;
 }

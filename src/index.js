@@ -1,5 +1,8 @@
 import './style.css';
-// import goldShireInn from './GoldSInn.jpg';
+
+import GoldShireInn from './GoldshireInn.webp';
+import FoodImg from './Food.webp';
+import ContactImg from './inn.jpg';
 
 import tab from "./tab";
 import homePage from './homePage';
@@ -8,18 +11,9 @@ import contactPage from "./contactPage";
 
 const content = document.getElementById("content");
 
-// Looks like we dont need anything below to set a background image.
-// Css is sufficient for this.
-// const backgroundImg = new Image();
-// backgroundImg.src = goldShireInn;
-// document.appendChild(backgroundImg);
-// const bgImg = document.createElement('img');
-// bgImg.src = goldShireInn;
-// let body = document.querySelector('body');
-// // body.appendChild(bgImg);
-
 content.appendChild(tab());
 content.appendChild(homePage());
+setBackground(GoldShireInn);
 
 
 function removeDiv() {
@@ -27,20 +21,29 @@ function removeDiv() {
     content.removeChild(child);
 }
 
+function setBackground(imgUrl) {
+    document.body.style.background = `url(${imgUrl}) no-repeat fixed center`;
+    // cover to set backgroundSize to cover whole screen
+    document.body.style.backgroundSize = 'cover';
+}
+
 const home = document.getElementById('homeTab');
 home.addEventListener('click', () => {
     removeDiv(),
-    content.appendChild(homePage())
+    content.appendChild(homePage()),
+    setBackground(GoldShireInn)
 });
 
 const menu = document.getElementById('menuTab');
 menu.addEventListener('click', () => {
     removeDiv(),
-    content.appendChild(menuPage())
+    content.appendChild(menuPage()),
+    setBackground(FoodImg)
 });
 
 const contact = document.getElementById('contactTab');
 contact.addEventListener('click', () => {
     removeDiv(),
-    content.appendChild(contactPage())
+    content.appendChild(contactPage()),
+    setBackground(ContactImg)
 });
