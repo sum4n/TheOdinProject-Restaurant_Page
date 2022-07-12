@@ -1,8 +1,6 @@
 import './style.css';
 
-import GoldShireInn from './GoldshireInn.webp';
-import FoodImg from './Food.webp';
-import ContactImg from './inn.jpg';
+import gsInn from './gs_inn.webp';
 
 import tab from "./tab";
 import homePage from './homePage';
@@ -13,21 +11,20 @@ const content = document.getElementById("content");
 
 content.appendChild(tab());
 content.appendChild(homePage());
-setBackground(GoldShireInn);
 // set homeTab marker on page load as it loads first automatically
 document.getElementById('homeTab').classList.add('underline');
 
+const bodyDiv = document.querySelector('body');
+const bImg = document.createElement('img');
+bImg.classList.add('background');
+bImg.src = gsInn;
+bodyDiv.appendChild(bImg);
 
 function removeDiv() {
     const lastChild = content.lastElementChild;
     content.removeChild(lastChild);
 }
 
-function setBackground(imgUrl) {
-    document.body.style.background = `url(${imgUrl}) no-repeat fixed center`;
-    // cover to set backgroundSize to cover whole screen
-    document.body.style.backgroundSize = 'cover';
-}
 
 function markCurrentNav(navID) {
     let underline = document.querySelector('.underline');
@@ -41,7 +38,6 @@ const home = document.getElementById('homeTab');
 home.addEventListener('click', () => {
     removeDiv(),
     content.appendChild(homePage()),
-    setBackground(GoldShireInn),
     markCurrentNav(home)
 });
 
@@ -49,7 +45,6 @@ const menu = document.getElementById('menuTab');
 menu.addEventListener('click', () => {
     removeDiv(),
     content.appendChild(menuPage()),
-    setBackground(FoodImg),
     markCurrentNav(menu)
 });
 
@@ -57,6 +52,5 @@ const contact = document.getElementById('contactTab');
 contact.addEventListener('click', () => {
     removeDiv(),
     content.appendChild(contactPage()),
-    setBackground(ContactImg),
     markCurrentNav(contact)
 });
