@@ -3,6 +3,7 @@ body {
     font-weight: bold;
     /* text-shadow: 2px 2px black; */
     font-family:Arial, Helvetica, sans-serif;
+    background: url('./images/gs_inn.webp');
 }
 
 .background {
@@ -65,6 +66,7 @@ body {
     display: flex;
     font-size: .8rem;
     font-weight: normal;
+    /* To stop font wrapping */
     white-space: nowrap;
     gap: 1rem;
     justify-content: flex-start;
