@@ -28,6 +28,7 @@ export default function() {
 
         addToDom() {
             const itemDiv = document.createElement('div');
+            itemDiv.classList.add('menuItems');
 
             const itemImg = document.createElement('img');
             itemImg.src = this.itemImgSrc;
