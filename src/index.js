@@ -10,7 +10,8 @@ import contactPage from "./contactPage";
 const content = document.getElementById("content");
 
 content.appendChild(tab());
-content.appendChild(homePage());
+// content.appendChild(homePage());
+content.appendChild(menuPage());
 // set homeTab marker on page load as it loads first automatically
 document.getElementById('homeTab').classList.add('underline');
 
