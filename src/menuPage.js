@@ -1,5 +1,10 @@
-import alteracSwiss from './alteracSwiss.webp';
-import copper from './Copper.webp';
+import alteracSwiss from './images/alteracSwiss.webp';
+import dalaranSharp from './images/dalaranSharp.webp';
+import darnassianBleu from './images/darnassianBleu.webp';
+import dwarvenMild from './images/dwarvenMild.webp';
+import fineAgedCheddar from './images/fineAgedCheddar.webp';
+import copper from './images/Copper.webp';
+import silver from './images/Silver.webp';
 
 
 export default function() {
@@ -45,6 +50,18 @@ export default function() {
 
     let alteracswiss = new MenuItems(alteracSwiss, "Alterac Swiss", 40, copper);
     alteracswiss.addToDom();
+
+    let dalaransharp = new MenuItems(dalaranSharp, "Dalaran Sharp", 2, silver);
+    dalaransharp.addToDom();
+
+    let darnassianbleu = new MenuItems(darnassianBleu, "Darnassian Blue", 25, copper);
+    darnassianbleu.addToDom();
+
+    let dwarvenmild = new MenuItems(dwarvenMild, "Dwarven Mild", 5, silver);
+    dwarvenmild.addToDom();
+
+    let fineagedcheddar = new MenuItems(fineAgedCheddar, "Fine Aged Cheddar", 20, silver);
+    fineagedcheddar.addToDom();
 
     menuDiv.appendChild(foodsNdrinks);
 

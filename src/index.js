@@ -1,6 +1,6 @@
 import './style.css';
 
-import gsInn from './gs_inn.webp';
+import gsInn from './images/gs_inn.webp';
 
 import tab from "./tab";
 import homePage from './homePage';
