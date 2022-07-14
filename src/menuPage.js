@@ -31,7 +31,11 @@ export default function() {
             itemDiv.classList.add('menuItems');
 
             const itemImg = document.createElement('img');
+            itemImg.classList.add('itemImg');
             itemImg.src = this.itemImgSrc;
+
+            const itemNamePriceDiv = document.createElement('div');
+            itemNamePriceDiv.classList.add('itemNamePrice');
             
             const itemNameDiv = document.createElement('p');
             itemNameDiv.textContent = this.nameTxt;
@@ -40,9 +44,14 @@ export default function() {
             itemPriceDiv.textContent = this.priceTxt;
 
             const itemPriceImg = document.createElement('img');
+            itemPriceImg.classList.add('priceImg');
             itemPriceImg.src = this.priceImgSrc;
 
-            itemDiv.append(itemImg, itemNameDiv, itemPriceDiv, itemPriceImg);
+            itemPriceDiv.appendChild(itemPriceImg);
+
+            itemNamePriceDiv.append(itemNameDiv, itemPriceDiv);
+
+            itemDiv.append(itemImg, itemNamePriceDiv);
 
             foodsNdrinks.appendChild(itemDiv);
 
