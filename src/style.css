@@ -99,3 +99,16 @@ body {
     width: 18px;
     height: 18px;
 }
+
+#contactPage {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#contactPage > p {
+    font-size: .8rem;
+}
+
+#contactPage > .contactMap {
+    margin-top: 3rem;
+}

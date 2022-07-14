@@ -17,7 +17,7 @@ bodyDiv.appendChild(bImg);
 
 content.appendChild(tab());
 // content.appendChild(homePage());
-content.appendChild(menuPage());
+content.appendChild(homePage());
 // set homeTab marker on page load as it loads first automatically
 document.getElementById('homeTab').classList.add('underline');
 
